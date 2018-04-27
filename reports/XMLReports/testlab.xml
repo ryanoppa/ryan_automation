@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="testlab"
+    errors="1" failures="0" hostname="" id="" package="testlab" skipped="0"
+    tests="1" time="0.004000" timestamp="Fri, 20 Apr 2018 22:01:20 GMT">
+  
+    <testcase name="Demo test testlab" classname="testlab" time="0.004000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Testlab / Demo test testlab]:
+
+  TypeError: browser.url(...).resizeWindow(...).waitForElementVisible(...).setValue(...).setValue(...).click(...).waitForElementVisible(...).click(...).useXpath(...).click(...).waitForElementVisible(...).click(...).waitForElementVisible(...).click(...).useCss(...).waitForElementVisible(...).setValue(...).setValue(...).useXpath(...).click(...).click(...).click(...).useCss(...).waitForElementVisible(...).click(...).click(...).elementPresent is not a function
+    at Object.Demo test testlab (C:\Users\RyanK\Documents\testautomation\tests\testlab.js:54:9)
+    at Module.call (C:\Users\RyanK\Documents\testautomation\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\RyanK\Documents\testautomation\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:796:13)
+    at C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:137:13)
+    at flush (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

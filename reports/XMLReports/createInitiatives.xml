@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="createInitiatives"
+    errors="1" failures="0" hostname="" id="" package="createInitiatives" skipped="0"
+    tests="1" time="0.005000" timestamp="Mon, 23 Apr 2018 21:13:24 GMT">
+  
+    <testcase name="Demo test testlab" classname="createInitiatives" time="0.005000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Create Initiatives / Demo test testlab]:
+
+  TypeError: browser.url(...).maximizeWindow(...).waitForElementVisible(...).setValue(...).setValue(...).click(...).waitForElementVisible(...).click(...).useXpath(...).click(...).waitForElementVisible(...).click(...).waitForElementVisible(...).click(...).useCss(...).waitForElementVisible(...).setValue(...).setValue(...).useXpath(...).click(...).click(...).click(...).useCss(...).waitForElementVisible(...).click(...).click(...).useXpath(...).assert.elementPresent(...).assert.containsText(...).assert.elementPresent(...).assert.elementPresent(...).assert.elementPresent(...).click(...).click(...).setValue(...).pause(...).click(...).assert.elementPresent(...).click(...).click(...).click(...).click(...).click(...).click(...).click(...).click(...).click(...).setValue(...).setValue(...).click(...).click(...).click(...).click(...).click(...).click(...).click(...).click(...).setValue(...).click(...).waitForElementVisible(...).assert.elementPresent(...).assert.elementPresent(...).click(...).assert.elementPresent(...).click(...).waitForElementVisible(...).assert.elementPresent(...).getText(...).useCss(...).waitForElementVisible(...).click(...).useXpath(...).waitForElementVisible(...).assert.elementPresent(...).click(...).assert.assertTextNotPresent is not a function
+    at Object.Demo test testlab (C:\Users\RyanK\Documents\testautomation\tests\createInitiatives.js:162:16)
+    at Module.call (C:\Users\RyanK\Documents\testautomation\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\RyanK\Documents\testautomation\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:796:13)
+    at C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:137:13)
+    at flush (C:\Users\RyanK\Documents\testautomation\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

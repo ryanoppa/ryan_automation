@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="TS_AP_002"
+    errors="0" failures="0" hostname="" id="" package="TS_AP_002" skipped="0"
+    tests="1" time="20.63" timestamp="Thu, 26 Apr 2018 21:52:19 GMT">
+  
+    <testcase name="Demo test testlab" classname="TS_AP_002" time="20.63" assertions="13">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

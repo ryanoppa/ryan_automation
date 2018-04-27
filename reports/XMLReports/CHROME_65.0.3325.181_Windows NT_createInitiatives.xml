@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="createInitiatives"
+    errors="0" failures="0" hostname="" id="" package="createInitiatives" skipped="0"
+    tests="1" time="17.87" timestamp="Thu, 26 Apr 2018 21:52:53 GMT">
+  
+    <testcase name="Demo test testlab" classname="createInitiatives" time="17.87" assertions="29">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
