@@ -1,3 +1,5 @@
+const loginPage = require('./locators_loginPage.js');
+
 module.exports = {
     tags: ['TS_AP_003'],
     'Demo test testlab' : function (browser) {
@@ -8,10 +10,10 @@ module.exports = {
          //go to Horizon home page
          .url('https://mob.testlab.firmglobal.net/home/') 
          .maximizeWindow()
-         .waitForElementVisible('input[class=username-input]',5000)
-         .setValue('input[class=username-input]', 'RyanK_Pros')
-         .setValue('input[class=password-input]', 'Goomin88')
-         .click('input[id=btnlogin]')
+         .waitForElementVisible(loginPage.account,5000)
+         .setValue(loginPage.account, 'RyanK_Pros')
+         .setValue(loginPage.password, 'Goomin88')
+         .click(loginPage.submitButton)
   
          //go into studio
          .useXpath()
