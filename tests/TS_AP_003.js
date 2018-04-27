@@ -13,7 +13,7 @@ module.exports = {
          .waitForElementVisible(loginPage.account,5000)
          .setValue(loginPage.account, 'RyanK_Pros')
          .setValue(loginPage.password, 'Goomin88')
-         .click(loginPage.submitButton)
+         .click(loginPage.submitButton)//
   
          //go into studio
          .useXpath()
