@@ -53,7 +53,7 @@ let initiativePage = {
     initiativeDetailStatistic:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[2]',
     initiativeDetailInterval:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[2]/div[2]',
     initiativeDetailGoal:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[3]/div[2]'
-    /* End *//
+    /* End *////./././
 
 
 
