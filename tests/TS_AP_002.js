@@ -5,8 +5,9 @@ module.exports = {
     'Demo test testlab' : function (browser) {
          browser 
   
-         /*Test Domain: Studio*/
-         /*Test report: Ryan Action Planner App*/
+         /* Test Domain: Studio */
+         /* Test report: Ryan Action Planner App */
+         /* Preconditions & Test Data: At least one initiative exists */
          //go to Horizon home page
          .url('https://mob.testlab.firmglobal.net/home/') 
          .maximizeWindow()
