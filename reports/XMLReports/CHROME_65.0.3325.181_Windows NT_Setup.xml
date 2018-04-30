@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="0">
+            failures="1"
+            tests="1">
 
-  <testsuite name="locators_initiativePage"
-    errors="0" failures="0" hostname="" id="" package="locators_initiativePage" skipped="0"
-    tests="0" time="0.000" timestamp="Mon, 30 Apr 2018 22:30:20 GMT">
+  <testsuite name="Setup"
+    errors="0" failures="1" hostname="" id="" package="Setup" skipped="0"
+    tests="1" time="14.40" timestamp="Mon, 30 Apr 2018 22:29:03 GMT">
+  
+    <testcase name="setup" classname="Setup" time="14.40" assertions="2">
+
+      <failure message="Timed out while waiting for element &lt;//*[@id=&#34;root&#34;]/div/main/section/div[2]/div[1]/section/div/ol/li[12]/div/a/div[1]/div/div&gt; to be present for 8000 milliseconds.">    at Object.setup (C:\Users\RyanK\Documents\ryanautomation\tests\Setup.js:19:17)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
   
 
   

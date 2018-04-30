@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="3"
             failures="0"
-            tests="0">
+            tests="1">
 
-  <testsuite name="locators_initiativePage"
-    errors="0" failures="0" hostname="" id="" package="locators_initiativePage" skipped="0"
-    tests="0" time="0.000" timestamp="Mon, 30 Apr 2018 22:30:20 GMT">
+  <testsuite name="OtherActions"
+    errors="3" failures="0" hostname="" id="" package="OtherActions" skipped="0"
+    tests="1" time="3.586" timestamp="Mon, 30 Apr 2018 22:28:59 GMT">
+  
+    <testcase name="deleteDuplicate" classname="OtherActions" time="3.586" assertions="0">
+    </testcase>
   
 
   

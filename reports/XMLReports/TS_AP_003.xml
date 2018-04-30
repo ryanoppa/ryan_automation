@@ -3,21 +3,21 @@
             failures="0"
             tests="1">
 
-  <testsuite name="TS_AP_002"
-    errors="1" failures="0" hostname="" id="" package="TS_AP_002" skipped="0"
-    tests="1" time="0.004000" timestamp="Mon, 30 Apr 2018 21:36:39 GMT">
+  <testsuite name="TS_AP_003"
+    errors="1" failures="0" hostname="" id="" package="TS_AP_003" skipped="0"
+    tests="1" time="0.004000" timestamp="Mon, 30 Apr 2018 20:36:36 GMT">
   
-    <testcase name="Demo test testlab" classname="TS_AP_002" time="0.004000" assertions="0">
+    <testcase name="Demo test testlab" classname="TS_AP_003" time="0.004000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [TS AP 002 / Demo test testlab]:
+        Error while running [TS AP 003 / Demo test testlab]:
 
-  TypeError: browser.click is not a function
-    at Object.deleteDupe (C:\Users\RyanK\Documents\ryanautomation\tests\Setup.js:32:18)
-    at Object.Demo test testlab (C:\Users\RyanK\Documents\ryanautomation\tests\TS_AP_002.js:44:25)
+  TypeError: Cannot read property &#39;url&#39; of undefined
+    at Object.setup (C:\Users\RyanK\Documents\ryanautomation\tests\Setup.js:9:17)
+    at Object.Demo test testlab (C:\Users\RyanK\Documents\ryanautomation\tests\TS_AP_003.js:10:16)
     at Module.call (C:\Users\RyanK\Documents\ryanautomation\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\RyanK\Documents\ryanautomation\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\RyanK\Documents\ryanautomation\node_modules\q\q.js:834:54)

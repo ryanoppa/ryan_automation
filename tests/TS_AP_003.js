@@ -1,40 +1,21 @@
-const loginPage = require('./locators_loginPage.js');
+const initiativePage = require('C:/Users/RyanK/Documents/ryanautomation/locators/locators_initiativePage.js');
+const Setup = require('C:/Users/RyanK/Documents/ryanautomation/actions/Setup.js');
 
+
+/* Test Domain: Studio */
+/* Test report: Ryan Action Planner App */
+/* Preconditions & Test Data: At least one initiative exists */
 module.exports = {
     tags: ['TS_AP_003'],
-    'Demo test testlab' : function (browser) {
-         browser 
+    'Demo test testlab' : function (client) {
+         Setup.setup(client);
+         client 
   
-         /* Test Domain: Studio */
-         /* Test report: Ryan Action Planner App */
-         /* Preconditions & Test Data: At least one initiative exists */
-         //go to Horizon home page
-         .url('https://mob.testlab.firmglobal.net/home/')
-         .maximizeWindow()
-         .waitForElementVisible(loginPage.account,5000)
-         .setValue(loginPage.account, 'RyanK_Pros')
-         .setValue(loginPage.password, 'Goomin88')
-         .click(loginPage.submitButton)
-  
-         //go into studio
-         .useXpath()
-         .waitForElementVisible('//*[@id="root"]/div/main/section/div[2]/div[1]/section/div/ol/li[12]/div/a/div[1]/div/div',8000)
-         .click('//*[@id="root"]/div/main/section/div[2]/div[1]/section/div/ol/li[12]/div/a/div[1]/div/div')
-
-         //go into Ryan Action Planner App
-         .waitForElementVisible('//*[@id="root"]/div/div/div/div/main/table/tbody/tr[11]/td[1]/span/a',8000)
-         .click('//*[@id="root"]/div/div/div/div/main/table/tbody/tr[11]/td[1]/span/a')
-
-         //minimize editor
-         .pause(4000) //Widget does not load when editor is minimized before page loads. Give explicit pause. WaitForElementVisible() will not work.
-         .click('//*[@id="root"]/div/div/div/div/section/div/div[1]/div/div[1]/div[1]/span[2]/span[2]')
-         .pause(1500) //Give extra one second while editor shrinks
-
          //open kabob [...] for any initiative
-         .click('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/button')
+         .click(initiativePage.initiativeKabob) //initiative created in TS_AP_001
 
          //click Delete option
-         .click('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/ul/li[3]/button/div')
+         .click(initiativePage.initiativeKabobDelete)
 
          //Wait for confirmation modal to display
          .waitForElementVisible('/html/body/div[22]/div/div/div', 2000)
@@ -66,7 +47,7 @@ module.exports = {
          .waitForElementVisible('/html/body/div[22]/div/div/div', 2000) */
 
          //click DELETE button
-         .click('/html/body/div[22]/div/div/div/footer/button[2]/span')
+         .click(initiativePage.initiativeDeletionConfirmationDeleteButton)
          
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_003 - result.png')

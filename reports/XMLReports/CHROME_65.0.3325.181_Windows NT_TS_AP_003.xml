@@ -5,9 +5,9 @@
 
   <testsuite name="TS_AP_003"
     errors="0" failures="0" hostname="" id="" package="TS_AP_003" skipped="0"
-    tests="1" time="14.19" timestamp="Fri, 27 Apr 2018 22:29:54 GMT">
+    tests="1" time="15.91" timestamp="Mon, 30 Apr 2018 23:58:18 GMT">
   
-    <testcase name="Demo test testlab" classname="TS_AP_003" time="14.19" assertions="10">
+    <testcase name="Demo test testlab" classname="TS_AP_003" time="15.91" assertions="10">
 
     
 

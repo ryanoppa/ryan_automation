@@ -52,10 +52,28 @@ let initiativePage = {
     initiativeDetailQuestion:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[1]/div[4]/div[2]',
     initiativeDetailStatistic:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[2]',
     initiativeDetailInterval:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[2]/div[2]',
-    initiativeDetailGoal:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[3]/div[2]'
-    /* End *////./././
+    initiativeDetailGoal:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[3]/div[2]',
+    /* End */
+
+    /* Elements found on initiative list board */
+    initiativeKabob: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/button',
+    initiativeKabobViewEdit: '',
+    initiativeKabobDuplicate: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/ul/li[2]/button/div',
+    initiativeKabobDelete: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/ul/li[3]/button/div',
+    /* End */
+
+    /* Elements found on initiative duplication confirmation modal */
+    initiativeDuplicationConfirmationDuplicateButton:'/html/body/div[22]/div/div/div/div/footer/button[2]/span',
+    initiativeDuplicationCOnfirmationCancelButton:'/html/body/div[22]/div/div/div/div/footer/button[1]',
+    initiativeDuplicationConfirmationNameField:'//*[@id="initiative-name"]',
+    /* End */
+
+    /* Elements found on initiative deletion confirmation modal */
+    initiativeDeletionConfirmationDeleteButton:'/html/body/div[22]/div/div/div/footer/button[2]/span'
+    /* End */
 
 
+    
 
 };
 

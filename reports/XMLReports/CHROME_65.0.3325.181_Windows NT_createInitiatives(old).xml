@@ -3,11 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="createInitiatives"
-    errors="0" failures="0" hostname="" id="" package="createInitiatives" skipped="0"
-    tests="1" time="17.38" timestamp="Mon, 30 Apr 2018 22:58:18 GMT">
+  <testsuite name="createInitiatives(old)"
+    errors="0" failures="0" hostname="" id="" package="createInitiatives(old)" skipped="0"
+    tests="1" time="17.48" timestamp="Mon, 30 Apr 2018 23:58:34 GMT">
   
-    <testcase name="Demo test testlab" classname="createInitiatives" time="17.38" assertions="29">
+    <testcase name="Demo test testlab" classname="createInitiatives(old)" time="17.48" assertions="29">
 
     
 

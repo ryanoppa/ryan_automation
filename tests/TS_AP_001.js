@@ -1,35 +1,14 @@
-const loginPage = require('./locators_loginPage.js');
-const initiativePage = require('./locators_initiativePage.js');
+const initiativePage = require('C:/Users/RyanK/Documents/ryanautomation/locators/locators_initiativePage.js');
+const Setup = require('C:/Users/RyanK/Documents/ryanautomation/actions/Setup.js');
 
+/* Test Domain: Studio */
+/* Test report: Ryan Action Planner App */
+/* Preconditions & Test Data: At least one report exists */
 module.exports = {
   tags: ['TS_AP_001'],
-  'Demo test testlab' : function (browser) {
-       browser 
-
-       /* Test Domain: Studio */
-       /* Test report: Ryan Action Planner App */
-       /* Preconditions & Test Data: At least one report exists */
-       //go to Horizon home page
-       .url('https://mob.testlab.firmglobal.net/home/') 
-       .maximizeWindow()
-       .waitForElementVisible(loginPage.account,5000)
-       .setValue(loginPage.account, 'RyanK_Pros')
-       .setValue(loginPage.password, 'Goomin88')
-       .click(loginPage.submitButton)
-
-       //go into studio
-       .useXpath()
-       .waitForElementVisible('//*[@id="root"]/div/main/section/div[2]/div[1]/section/div/ol/li[12]/div/a/div[1]/div/div',8000)
-       .click('//*[@id="root"]/div/main/section/div[2]/div[1]/section/div/ol/li[12]/div/a/div[1]/div/div')
-
-       //go into Ryan Action Planner App
-       .waitForElementVisible('//*[@id="root"]/div/div/div/div/main/table/tbody/tr[11]/td[1]/span/a',8000)
-       .click('//*[@id="root"]/div/div/div/div/main/table/tbody/tr[11]/td[1]/span/a')
-
-       //minimize editor
-      .pause(4000) //Widget does not load when editor is minimized before page is fully loaded. Give explicit pause. WaitForElementVisible() will not work.
-      .click('//*[@id="root"]/div/div/div/div/section/div/div[1]/div/div[1]/div[1]/span[2]/span[2]')
-      .pause(1500) //Give extra one second while editor shrinks
+  'Demo test testlab' : function (client) {
+       Setup.setup(client);
+       client 
 
        //verify all static/dynamic elements are present
        //verify dashboard header elements and text: 1)Total Initiatives 2)Active Initiatives 3)Closed Initiatives
@@ -82,7 +61,7 @@ module.exports = {
        .waitForElementVisible(initiativePage.initiativeQuestionSelection, 2000)
        .click(initiativePage.initiativeQuestionSelection)
        
-       /*TC_AP_Creation_006: bug not fixed
+       /*TC_AP_Creation_006: BUG
        //click add collaborators button and select 2nd choice
        .click('/html/body/div[21]/div/div/div/div/div[2]/div/div[6]/div[1]')
        .waitForElementVisible('/html/body/div[21]/div/div/div/div/div[2]/div/div[6]/div[3]/div[4]/div/div[2]/div[1]/div/label', 2000)
