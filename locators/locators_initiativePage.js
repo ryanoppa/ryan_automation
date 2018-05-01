@@ -13,9 +13,10 @@ let initiativePage = {
     initiativeName: '//*[@id="initiative-name"]',
     initiativeDescription: '//*[@id="initiative-description"]',
     initiativeSource: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div[1]',
+    initiativeSourceSelection: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[4]/div/ul/li/div/div/span/span[2]', //survey: Confirmit Vancouver - customer satisfaction
     initiativeQuestion: '/html/body/div[16]/div/div/div/div/div[2]/div/div[4]/div[1]/div[1]',
     initiativeQuestionSelection:'/html/body/div[16]/div/div/div/div/div[2]/div/div[4]/div[4]/div/ul/li[2]/div/div/div/span/div[2]', //Question: "Last device used"
-    initiativeNextButtonPageOne: '/html/body/div[16]/div/div/div/footer/button[3]/span',
+    initiativeNextButtonPageOne: '/html/body/div[16]/div/div/div/footer/button[3]/span', 
     
     //Page2: ADD ACTIONS
     initiativeAddActionTextBox:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div[1]/textarea',

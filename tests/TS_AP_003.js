@@ -1,6 +1,6 @@
 const initiativePage = require('C:/Users/RyanK/Documents/ryanautomation/locators/locators_initiativePage.js');
 const Setup = require('C:/Users/RyanK/Documents/ryanautomation/actions/Setup.js');
-
+const TC_TS_AP_003 = require('C:/Users/RyanK/Documents/ryanautomation/Testcase methods/TC_TS_AP_003.js')
 
 /* Test Domain: Studio */
 /* Test report: Ryan Action Planner App */
@@ -12,10 +12,14 @@ module.exports = {
          client 
   
          //open kabob [...] for any initiative
-         .click(initiativePage.initiativeKabob) //initiative created in TS_AP_001
+         .perform(function(){
+           TC_TS_AP_003.verifyInitiativeKabob(client);
+         })
 
          //click Delete option
-         .click(initiativePage.initiativeKabobDelete)
+         .perform(function(){
+           TC_TS_AP_003.verifyInitiativeKabobDelete(client);
+         })
 
          //Wait for confirmation modal to display
          .waitForElementVisible('/html/body/div[22]/div/div/div', 2000)
@@ -47,7 +51,9 @@ module.exports = {
          .waitForElementVisible('/html/body/div[22]/div/div/div', 2000) */
 
          //click DELETE button
-         .click(initiativePage.initiativeDeletionConfirmationDeleteButton)
+         .perform(function(){
+           TC_TS_AP_003.verifyInitiativeDeletionConfirmationDeleteButton(client);
+         })
          
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_003 - result.png')

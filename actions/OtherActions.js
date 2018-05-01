@@ -12,4 +12,4 @@ module.exports = {
         client.click('/html/body/div[22]/div/div/div/footer/button[2]/span') //click DELETE button
         client.pause(500) //wait while modal closes
     }
-}
+};

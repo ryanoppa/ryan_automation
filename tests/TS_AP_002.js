@@ -1,7 +1,9 @@
 const initiativePage = require('C:/Users/RyanK/Documents/ryanautomation/locators/locators_initiativePage.js');
 const Setup = require('C:/Users/RyanK/Documents/ryanautomation/actions/Setup.js');
 const OtherActions = require('C:/Users/RyanK/Documents/ryanautomation/actions/OtherActions.js');
+const TC_TS_AP_002 = require('C:/Users/RyanK/Documents/ryanautomation/Testcase methods/TC_TS_AP_002.js')
 
+/* TS_AP_002: verify initiative duplication */
 /* Test Domain: Studio */
 /* Test report: Ryan Action Planner App */
 /* Preconditions & Test Data: At least one initiative exists */
@@ -12,22 +14,28 @@ module.exports = {
          client
 
          //TC_AP_Duplication_001: verify clicking kabob[…] on an initiave displays three options (View/Edit, Duplicate, Delete)
-         .click(initiativePage.initiativeKabob)
+         .perform(function(){
+             TC_TS_AP_002.verifyInitiativeKabob(client);
+         })
 
          //TC_AP_Duplication_002: verify clicking 'Duplicate' option for kabob[…] displays a confirmation modal
-         .click(initiativePage.initiativeKabobDuplicate)
+         .perform(function(){
+             TC_TS_AP_002.verifyInitiativeKabobDuplicate(client);
+         })
 
          //TC_AP_Duplication_003: verify clicking 'CANCEL' button inside confirmation modal closes the modal
-         .click(initiativePage.initiativeDuplicationCOnfirmationCancelButton)
-         .pause(1000) //wait while modal closes
+         .perform(function(){
+             TC_TS_AP_002.verifyInitiativeDuplicationConfirmationCancelButton(client);
+         })
 
          //open Duplication modal again
          .click(initiativePage.initiativeKabob) //open kabob on original initiative
          .click(initiativePage.initiativeKabobDuplicate) //click Duplicate option
 
          //TC_AP_Duplication_004: verify duplication with a name as placeholder (ie, without setting a specific value)
-         .waitForElementVisible(initiativePage.initiativeDuplicationConfirmationNameField, 8000)
-         .click(initiativePage.initiativeDuplicationConfirmationDuplicateButton) //click DUPLICATE button
+         .perform(function(){
+             TC_TS_AP_002.verifyInitiativeDuplicationWithPlaceholderName(client);
+         })
 
          //verify the duplicate is correctly created by checking its value
          .waitForElementVisible('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr[2]/td[1]', 2000)
@@ -40,7 +48,7 @@ module.exports = {
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_002 - duplicate created with placeholder name.png')
 
-         /** delete the duplicate for database cleanliness and consistency **/
+         //delete the duplicate for database cleanliness and consistency
          .perform(function(){
              OtherActions.deleteDuplicate(client);
          })
@@ -50,11 +58,9 @@ module.exports = {
          .click(initiativePage.initiativeKabobDuplicate) //click Duplicate option
 
          //TC_AP_Duplication_005: verify duplication with user-defined name (ie, set a value different than placeholder)
-         .waitForElementVisible(initiativePage.initiativeDuplicationConfirmationNameField, 8000)
-         .clearValue(initiativePage.initiativeDuplicationConfirmationNameField)
-         .setValue(initiativePage.initiativeDuplicationConfirmationNameField, "make office crews happier")
-         .pause(500)
-         .click(initiativePage.initiativeDuplicationConfirmationDuplicateButton) //click DUPLICATE button
+         .perform(function(){
+             TC_TS_AP_002.verifyInitiativeDuplicationWithDefinedName(client);
+         })
 
          //verify the duplicate is correctly created by checking its value
          .pause(500)
@@ -68,7 +74,7 @@ module.exports = {
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_002 - duplicate created with a name.png')
 
-         /** delete the duplicate for database cleanliness and consistency **/
+         //delete the duplicate for database cleanliness and consistency
          .perform(function(){
              OtherActions.deleteDuplicate(client);
          })
