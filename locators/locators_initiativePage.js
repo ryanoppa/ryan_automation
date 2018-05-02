@@ -13,9 +13,9 @@ let initiativePage = {
     initiativeName: '//*[@id="initiative-name"]',
     initiativeDescription: '//*[@id="initiative-description"]',
     initiativeSource: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div[1]',
-    initiativeSourceSelection: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[4]/div/ul/li/div/div/span/span[2]', //survey: Confirmit Vancouver - customer satisfaction
+    initiativeSourceSelection: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[4]/div/div/div/ul/li/div/div/span[2]', //survey: Confirmit Vancouver - customer satisfaction
     initiativeQuestion: '/html/body/div[16]/div/div/div/div/div[2]/div/div[4]/div[1]/div[1]',
-    initiativeQuestionSelection:'/html/body/div[16]/div/div/div/div/div[2]/div/div[4]/div[4]/div/ul/li[2]/div/div/div/span/div[2]', //Question: "Last device used"
+    initiativeQuestionSelection:'/html/body/div[22]/div/div/ul/li[2]/div/div/div/div/div[1]/div[2]', //Question: "Last device used"
     initiativeNextButtonPageOne: '/html/body/div[16]/div/div/div/footer/button[3]/span', 
     
     //Page2: ADD ACTIONS
@@ -25,13 +25,13 @@ let initiativePage = {
 
     //Page3: SET ATTRIBUTES
     initiativeStatistic:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/div[1]',
-    initiativeStatisticSegment:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div/div/div[4]/div/div/div',
-    initiativeStatisticSegmentGeneric:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div/div/div[4]/div/div[2]/div[1]/div[2]/div[3]/div/label[1]',
-    initiativeStatisticApplyButton:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div/div/div[4]/div/div[2]/div[2]/button[1]/span',
+    initiativeStatisticSegment:'/html/body/div[22]/div/div[2]/div[1]/div',
+    initiativeStatisticSegmentGeneric:'/html/body/div[22]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div/label',
+    initiativeStatisticSaveButton:'/html/body/div[22]/div/div[3]/button[2]/span',
     initiativeInterval:'/html/body/div[16]/div/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[1]/div[1]',
-    initiativeIntervalSixMonths:'/html/body/div[16]/div/div/div/div/div[2]/div/div[2]/div/div/div[4]/div/ul/li[3]/div/div/span',
+    initiativeIntervalSixMonths:'/html/body/div[16]/div/div/div/div/div[2]/div/div[2]/div/div/div[4]/div/div/div/ul/li[3]/div/div/div/span',
     initiativeRule:'/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[2]/div[1]',
-    initiativeRuleLessThan:'/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[4]/div/ul/li[2]/div/div/span',
+    initiativeRuleLessThan:'/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[4]/div/div/div/ul/li[2]/div/div/div/span',
     initiativeGoal:'//*[@id="timeline-goal"]',
     initiativeThreshold:'//*[@id="threshold-input"]',
     initiativeSaveButton:'/html/body/div[16]/div/div/div/footer/button[2]/span',
@@ -47,7 +47,7 @@ let initiativePage = {
 
     /* Elements found on initiative details expandable tab */
     initiativeDetailTab:'//*[@id="root"]/section/article[1]/div/div[2]/div[1]/p',
-    initiativeDetailTitle:'//*[@id="root"]/section/article[1]/div/div[1]/div[1]/div/div/div/span',
+    initiativeDetailTitle:'//*[@id="root"]/section/article[1]/div/div[1]/div[1]/div/div/div/div/span',
     initiativeDetailDescription:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[1]/div[1]/div[2]',
     initiativeDetailSource:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[1]/div[3]/div[2]',
     initiativeDetailQuestion:'//*[@id="root"]/section/article[1]/div/div[2]/div[2]/div/div[1]/div[4]/div[2]',
@@ -57,10 +57,10 @@ let initiativePage = {
     /* End */
 
     /* Elements found on initiative list board */
-    initiativeKabob: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/button',
+    initiativeKabob: '//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/button', //first initiative
     initiativeKabobViewEdit: '',
-    initiativeKabobDuplicate: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/ul/li[2]/button/div',
-    initiativeKabobDelete: '//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr/td[2]/div/ul/li[3]/button/div',
+    initiativeKabobDuplicate: '//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/ul/li[2]/button',
+    initiativeKabobDelete: '//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/ul/li[3]/button/div',
     /* End */
 
     /* Elements found on initiative duplication confirmation modal */

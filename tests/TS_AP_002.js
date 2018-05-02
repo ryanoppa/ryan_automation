@@ -13,7 +13,7 @@ module.exports = {
          Setup.setup(client);
          client
 
-         //TC_AP_Duplication_001: verify clicking kabob[…] on an initiave displays three options (View/Edit, Duplicate, Delete)
+         //TC_AP_Duplication_001: verify clicking kabob[…] on first initiave displays three options (View/Edit, Duplicate, Delete)
          .perform(function(){
              TC_TS_AP_002.verifyInitiativeKabob(client);
          })
@@ -29,7 +29,7 @@ module.exports = {
          })
 
          //open Duplication modal again
-         .click(initiativePage.initiativeKabob) //open kabob on original initiative
+         .click(initiativePage.initiativeKabob) //open kabob on first initiative
          .click(initiativePage.initiativeKabobDuplicate) //click Duplicate option
 
          //TC_AP_Duplication_004: verify duplication with a name as placeholder (ie, without setting a specific value)
@@ -38,8 +38,8 @@ module.exports = {
          })
 
          //verify the duplicate is correctly created by checking its value
-         .waitForElementVisible('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr[2]/td[1]', 2000)
-         .getText('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr[2]/td[1]', function(result){
+         .waitForElementVisible('//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr[2]/td[1]', 2000)
+         .getText('//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr[2]/td[1]', function(result){
              this.assert.equal(typeof result, "object");
              this.assert.equal(result.status, 0);
              this.assert.equal(result.value, "make office crews happy (Copy)")
@@ -49,9 +49,9 @@ module.exports = {
          .saveScreenshot('./Result Screenshots/TS_AP_002 - duplicate created with placeholder name.png')
 
          //delete the duplicate for database cleanliness and consistency
-         .perform(function(){
+         /*.perform(function(){
              OtherActions.deleteDuplicate(client);
-         })
+         })*/
 
          //open Duplication modal again
          .click(initiativePage.initiativeKabob) //open kabob on original initiative
@@ -64,20 +64,20 @@ module.exports = {
 
          //verify the duplicate is correctly created by checking its value
          .pause(500)
-         .waitForElementVisible('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr[1]/td[1]', 2000)
-         .getText('//*[@id="root"]/section/article[2]/div[2]/div/div/table/tbody/tr[1]/td[1]', function(result){
-             this.assert.equal(typeof result, "object");
+         .waitForElementVisible('//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr[3]/td[1]', 2000)
+         .getText('//*[@id="root"]/section/article[2]/div[2]/div/div/div/div/table/tbody/tr[3]/td[1]', function(result){
+             this.assert.equal(typeof result, "object"); 
              this.assert.equal(result.status, 0);
-             this.assert.equal(result.value, "make office crews happier")
+             this.assert.equal(result.value, "make office crews happy2")
          })
 
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_002 - duplicate created with a name.png')
 
          //delete the duplicate for database cleanliness and consistency
-         .perform(function(){
+         /*.perform(function(){
              OtherActions.deleteDuplicate(client);
-         })
+         })*/
 
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_002 - duplicate deleted.png')

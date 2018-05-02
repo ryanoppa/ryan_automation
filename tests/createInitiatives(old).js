@@ -159,6 +159,7 @@ module.exports = {
        .click('//*[@id="root"]/div/div[3]/div/div/div[3]/div/a[1]')
 
        //verify the initiative is deleted by checking confirmation message
+       .pause(1000)
        .waitForElementVisible('//*[@id="root"]/div/div[1]/div[2]', 8000)
        .assert.elementPresent('//*[@id="root"]/div/div[1]/div[2]')
        .getText('//*[@id="root"]/div/div[1]/div[2]', function(result){

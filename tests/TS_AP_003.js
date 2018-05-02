@@ -54,6 +54,8 @@ module.exports = {
          .perform(function(){
            TC_TS_AP_003.verifyInitiativeDeletionConfirmationDeleteButton(client);
          })
+
+         //verify
          
          //screenshot result
          .saveScreenshot('./Result Screenshots/TS_AP_003 - result.png')

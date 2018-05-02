@@ -5,9 +5,9 @@
 
   <testsuite name="createInitiatives(old)"
     errors="0" failures="0" hostname="" id="" package="createInitiatives(old)" skipped="0"
-    tests="1" time="32.43" timestamp="Tue, 01 May 2018 23:47:15 GMT">
+    tests="1" time="18.00" timestamp="Wed, 02 May 2018 23:38:42 GMT">
   
-    <testcase name="Demo test testlab" classname="createInitiatives(old)" time="32.43" assertions="29">
+    <testcase name="Demo test testlab" classname="createInitiatives(old)" time="18.00" assertions="29">
 
     
 
