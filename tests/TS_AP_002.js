@@ -13,7 +13,7 @@ module.exports = {
          Setup.setup(client);
          client
 
-         //TC_AP_Duplication_001: verify clicking kabob[…] on first initiave displays three options (View/Edit, Duplicate, Delete)
+         //TC_AP_Duplication_001: verify clicking kabob[…] on 1st initiave displays three options (View/Edit, Duplicate, Delete)
          .perform(function(){
              TC_TS_AP_002.verifyInitiativeKabob(client);
          })
@@ -30,8 +30,10 @@ module.exports = {
 
          //open Duplication modal again
          .click(initiativePage.initiativeKabob) //open kabob on first initiative
+         .pause(300)
          .click(initiativePage.initiativeKabobDuplicate) //click Duplicate option
-
+         .pause(300)
+         
          //TC_AP_Duplication_004: verify duplication with a name as placeholder (ie, without setting a specific value)
          .perform(function(){
              TC_TS_AP_002.verifyInitiativeDuplicationWithPlaceholderName(client);
@@ -54,9 +56,11 @@ module.exports = {
          })*/
 
          //open Duplication modal again
-         .click(initiativePage.initiativeKabob) //open kabob on original initiative
+         .click(initiativePage.initiativeKabob) //open kabob on 1st initiative
+         .pause(300)
          .click(initiativePage.initiativeKabobDuplicate) //click Duplicate option
-
+         .pause(300)
+         
          //TC_AP_Duplication_005: verify duplication with user-defined name (ie, set a value different than placeholder)
          .perform(function(){
              TC_TS_AP_002.verifyInitiativeDuplicationWithDefinedName(client);

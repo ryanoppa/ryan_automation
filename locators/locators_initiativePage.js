@@ -12,36 +12,36 @@ let initiativePage = {
     //Page1: CREATE INITIATIVE
     initiativeName: '//*[@id="initiative-name"]',
     initiativeDescription: '//*[@id="initiative-description"]',
-    initiativeSource: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div[1]',
-    initiativeSourceSelection: '/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[4]/div/div/div/ul/li/div/div/span[2]', //survey: Confirmit Vancouver - customer satisfaction
-    initiativeQuestion: '/html/body/div[16]/div/div/div/div/div[2]/div/div[4]/div[1]/div[1]',
-    initiativeQuestionSelection:'/html/body/div[22]/div/div/ul/li[2]/div/div/div/div/div[1]/div[2]', //Question: "Last device used"
-    initiativeNextButtonPageOne: '/html/body/div[16]/div/div/div/footer/button[3]/span', 
+    initiativeSource: '/html/body/div[17]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div[1]',
+    initiativeSourceSelection: '/html/body/div[17]/div/div/div/div/div[2]/div/div[3]/div/div[4]/div/div/div/ul/li/div/div', //survey: Confirmit Vancouver - customer satisfaction
+    initiativeQuestion: '/html/body/div[17]/div/div/div/div/div[2]/div/div[4]/div[1]/div[1]',
+    initiativeQuestionSelection:'/html/body/div[23]/div/div/ul/li[2]/div/div/div/div/div[1]/div[2]', //Question: "Last device used"
+    initiativeNextButtonPageOne: '/html/body/div[17]/div/div/div/footer/button[3]/span', 
     
     //Page2: ADD ACTIONS
-    initiativeAddActionTextBox:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div[1]/textarea',
-    initiativeAddActionAddButton:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div[2]/button/span',
-    initiativeNextButtonPageTwo: '/html/body/div[16]/div/div/div/footer/button[3]/span',
+    initiativeAddActionTextBox:'/html/body/div[17]/div/div/div/div/div[2]/div/div[1]/div[1]/textarea',
+    initiativeAddActionAddButton:'/html/body/div[17]/div/div/div/div/div[2]/div/div[1]/div[2]/button',
+    initiativeNextButtonPageTwo: '/html/body/div[17]/div/div/div/footer/button[3]/span',
 
     //Page3: SET ATTRIBUTES
-    initiativeStatistic:'/html/body/div[16]/div/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/div[1]',
-    initiativeStatisticSegment:'/html/body/div[22]/div/div[2]/div[1]/div',
-    initiativeStatisticSegmentGeneric:'/html/body/div[22]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div/label',
-    initiativeStatisticSaveButton:'/html/body/div[22]/div/div[3]/button[2]/span',
-    initiativeInterval:'/html/body/div[16]/div/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[1]/div[1]',
-    initiativeIntervalSixMonths:'/html/body/div[16]/div/div/div/div/div[2]/div/div[2]/div/div/div[4]/div/div/div/ul/li[3]/div/div/div/span',
-    initiativeRule:'/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[2]/div[1]',
-    initiativeRuleLessThan:'/html/body/div[16]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[4]/div/div/div/ul/li[2]/div/div/div/span',
+    initiativeStatistic:'/html/body/div[17]/div/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]',
+    initiativeStatisticSegment:'/html/body/div[23]/div/div[2]/div/div/div[1]/div/label',
+    initiativeStatisticSegmentGeneric:'/html/body/div[23]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div/label',
+    initiativeStatisticSaveButton:'/html/body/div[23]/div/div[3]/button[2]',
+    initiativeInterval:'/html/body/div[17]/div/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[1]',
+    initiativeIntervalSixMonths:'/html/body/div[17]/div/div/div/div/div[2]/div/div[2]/div/div/div[4]/div/div/div/ul/li[3]/div/div',
+    initiativeRule:'/html/body/div[17]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[2]/div[1]',
+    initiativeRuleLessThan:'/html/body/div[17]/div/div/div/div/div[2]/div/div[3]/div/div[1]/div/div[4]/div/div/div/ul/li[2]',
     initiativeGoal:'//*[@id="timeline-goal"]',
     initiativeThreshold:'//*[@id="threshold-input"]',
-    initiativeSaveButton:'/html/body/div[16]/div/div/div/footer/button[2]/span',
+    initiativeSaveButton:'/html/body/div[17]/div/div/div/footer/button[2]',
     /* End */
 
 
     /* Elements found on initiative creation confirmation modal */
-    initiativeCreationConfirmationTitle:'/html/body/div[20]/div/div/div/div/header/div/h4',
-    initiativeCreationConfirmationBody:'/html/body/div[20]/div/div/div/div/div',
-    initiativeCreationConfirmationViewInitiativeButton:'/html/body/div[20]/div/div/div/div/footer/button[2]/span',
+    initiativeCreationConfirmationTitle:'/html/body/div[21]/div/div/div/div/header/div/h4',
+    initiativeCreationConfirmationBody:'/html/body/div[21]/div/div/div/div/div',
+    initiativeCreationConfirmationViewInitiativeButton:'/html/body/div[21]/div/div/div/div/footer/button[2]',
     initiativeCreationConfirmationCloseButton: '',
     /* End */
 
@@ -64,13 +64,13 @@ let initiativePage = {
     /* End */
 
     /* Elements found on initiative duplication confirmation modal */
-    initiativeDuplicationConfirmationDuplicateButton:'/html/body/div[22]/div/div/div/div/footer/button[2]/span',
-    initiativeDuplicationCOnfirmationCancelButton:'/html/body/div[22]/div/div/div/div/footer/button[1]',
+    initiativeDuplicationConfirmationDuplicateButton:'/html/body/div[23]/div/div/div/div/footer/button[2]',
+    initiativeDuplicationCOnfirmationCancelButton:'/html/body/div[23]/div/div/div/div/footer/button[1]',
     initiativeDuplicationConfirmationNameField:'//*[@id="initiative-name"]',
     /* End */
 
     /* Elements found on initiative deletion confirmation modal */
-    initiativeDeletionConfirmationDeleteButton:'/html/body/div[22]/div/div/div/footer/button[2]/span'
+    initiativeDeletionConfirmationDeleteButton:'/html/body/div[23]/div/div/div/footer/button[2]'
     /* End */
 
 

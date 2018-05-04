@@ -120,9 +120,10 @@ module.exports = {
        })
        
        //TC_AP_Creation_018: verify action dropdown. Select 2
-       .click('/html/body/div[16]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[2]/div[1]')
-       .click('/html/body/div[16]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[4]/div/div[1]/div[2]/div[1]/div/label') //select 2
-       .click('/html/body/div[16]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[4]/div/div[2]/button[1]') //Apply button
+       //This field is dynamic. Tester can omit this tase case
+       .click('/html/body/div[17]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[2]/div[1]')
+       .click('/html/body/div[17]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[4]/div/div[1]/div[2]/div[1]/div/label') //select 2
+       .click('/html/body/div[17]/div/div/div/div/div[2]/div/div[5]/div/div/div/div[4]/div/div[2]/button[1]') //Apply button
        
        //TC_AP_Creation_019: verify Save button. Click Save button
        .perform(function(){
@@ -131,7 +132,7 @@ module.exports = {
 
        //verify correct confirmation message is displayed by checking: message title and body
        //After clicking Save button, wait for the confirmation modal to popup before checking elements in the modal. Or, give appx 2 seconds explicit pause
-       .waitForElementVisible('/html/body/div[20]/div/div/div/div', 8000) //confirmation modal element
+       .waitForElementVisible('/html/body/div[21]/div/div/div', 8000) //confirmation modal element
        .getText(initiativePage.initiativeCreationConfirmationTitle, function(result){
          this.assert.equal(typeof result, "object");
          this.assert.equal(result.status, 0);

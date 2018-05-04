@@ -146,9 +146,11 @@ module.exports = {
 
        //delete the initiative
        //click 'X' icon
+       .pause(1500)
        .useCss()
        .waitForElementVisible('svg[class="co-strategyplanning-icon icon-circle-x "]', 8000)
        .click('svg[class="co-strategyplanning-icon icon-circle-x "]')
+       .pause(1500)
 
 
        //verify confirmation modal pops up
@@ -157,6 +159,7 @@ module.exports = {
        .waitForElementVisible('//*[@id="root"]/div/div[3]/div/div/div[1]/div[1]', 8000)
        .assert.elementPresent('//*[@id="root"]/div/div[3]/div/div/div[1]/div[1]')
        .click('//*[@id="root"]/div/div[3]/div/div/div[3]/div/a[1]')
+       .pause(1500)
 
        //verify the initiative is deleted by checking confirmation message
        .pause(1000)

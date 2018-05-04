@@ -22,16 +22,16 @@ module.exports = {
          })
 
          //Wait for confirmation modal to display
-         .waitForElementVisible('/html/body/div[22]/div/div/div', 2000)
+         .waitForElementVisible('/html/body/div[23]/div/div/div', 2000)
 
          //verify confirmation modal title and body message
-         .getText('/html/body/div[22]/div/div/div/header/div/h4', function(result){
+         .getText('/html/body/div[23]/div/div/div/header/div/h4', function(result){
            this.assert.equal(typeof result, "object");
            this.assert.equal(result.status, 0);
            this.assert.equal(result.value, "Delete initiative?")
          })
 
-         .getText('/html/body/div[22]/div/div/div/div/p', function(result){
+         .getText('/html/body/div[23]/div/div/div/div/p', function(result){
            this.assert.equal(typeof result, "object");
            this.assert.equal(result.status, 0);
            this.assert.equal(result.value, "Are you sure you want to delete this initiative?");
